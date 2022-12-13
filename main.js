@@ -23,21 +23,14 @@ console.log('');
 // Когда сумеете – исправьте её так, чтобы она выводила «FizzBuzz» для всех чисел, которые делятся и на 3 и на 5.
 
 for (let i = 1; i <= 100; i++) {
-    if ( i % 3 == 0 ) {
-        console.log(i + '-' + 'Fizz');
-    } else if ( i % 5 == 0 ) {
-        console.log(i + '-' + 'Buzz');
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log(i + "-" + 'FizzBuzz');
+    } else if (i % 3 == 0 ) {
+        console.log(i + "-" + 'Fizz');
+    } else if (i % 5 == 0 ) {
+        console.log(i + "-" + 'Buzz');
     }
-}
-
-console.log('');
-console.log('============');
-console.log('');
-
-for (let i = 1; i <= 100; i++) {
-    if ( i % 3 == 0 && i % 5 == 0 ) {
-        console.log(i + '-' + 'Fizz');
-    }
+    
 }
 
 console.log('');
@@ -56,12 +49,3 @@ console.log('');
 // # # # #
 //  # # # #
 
-let b = '#';
-let c = ' '
-
-for (let i = 1; i <= 32; i++) {
-    console.log (b + c);
-    if (i % 4 == 0) {
-        console.log('\n');
-    }
-}
