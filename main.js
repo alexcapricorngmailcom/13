@@ -49,3 +49,22 @@ console.log('');
 // # # # #
 //  # # # #
 
+let b = '';
+
+for (i = 1; i <= 8; i++) {
+    if (i % 2 == 0) {
+        b = ' ';
+        for (let j = 1; j <= 4; j++) {
+            b = b + "# "
+        }
+        console.log(b);
+        b = '';
+    } else {
+        for (let j = 1; j <= 4; j++) {
+            b = b + "# "
+        }
+        console.log(b);
+        b = '';
+    }
+}
+
