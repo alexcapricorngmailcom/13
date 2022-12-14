@@ -68,3 +68,20 @@ for (i = 1; i <= 8; i++) {
     }
 }
 
+console.log('');
+console.log('============');
+console.log('');
+
+// мышыная оптимизация
+
+for (i = 1; i <= 8; i++) {
+    if (i % 2 == 0) {
+        b = ' ';
+    } 
+
+    for (let j = 1; j <= 4; j++) {
+        b = b + "# "
+    }
+    console.log(b);
+    b = '';
+}
